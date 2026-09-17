@@ -20,7 +20,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CURRENT_DESKTOP=wlroots
 export XDG_RUNTIME_DIR="/tmp/run/user/$(id -u)"
-#export SDL_VIDEODRIVER=wayland
 
 export LANG="en_GB.UTF-8"
 export LC_CTYPE="en_GB.UTF-8"

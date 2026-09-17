@@ -5385,3 +5385,83 @@ uninstall:
 	$(CC) $(CPPFLAGS) $(DWLCFLAGS) -o $@ -c $<
 #+end_src
 
+** pkg list
+
+#+NAME: pkg-list
+#+begin_src sh :results output list replace :wrap quote
+pkg_info -mz
+#+end_src
+
+#+RESULTS: pkg-list
+#+begin_quote
+- abook--
+- adwaita-qt--
+- adwaita-qt6--
+- alacritty--
+- aria2--
+- aspell--
+- bat--
+- cairo--
+- chromium--
+- clang-tools-extra--
+- curl--
+- dbus--
+- emacs--pgtk%emacs
+- fcft--
+- fd--
+- fdk-aac--
+- ffmpeg--
+- ffmpegthumbnailer--
+- fira-fonts--
+- firefox--
+- foot--
+- gcc--%15
+- git--
+- gmake--
+- grim--
+- imv--
+- intel-vaapi-driver--
+- iosevka--
+- jq--
+- libnotify--
+- libva-utils--
+- libxkbcommon--
+- meson--
+- mpc--
+- mpd--
+- mpv--
+- ncmpc--
+- ninja--
+- node--
+- noto-emoji--
+- oath-toolkit--
+- openvpn--
+- pandoc--
+- pango--
+- playerctl--
+- qbittorrent--
+- qt5--
+- qt5ct--
+- qt6ct--
+- quirks--
+- ripgrep--
+- rsync--
+- rust--
+- seatd--
+- shellcheck--
+- slurp--
+- syncthing--
+- tllist--
+- tree--
+- tree-sitter--
+- wayland-protocols--
+- wev--
+- wget--
+- wl-clipboard--
+- wlroots--
+- yt-dlp--
+- zathura--
+- zathura-pdf-mupdf--
+- zsh--
+- zsh-syntax-highlighting--
+#+end_quote

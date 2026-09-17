@@ -3014,7 +3014,7 @@ menu:
     cmd: /home/djwilcox/bin/pinch -i "$(wl-paste)"
   - key: "s"
     desc: screenshot
-    cmd: grim -o eDP-1
+    cmd: grim
 #+END_SRC
 
 *** wlr-which-key tangle

@@ -5190,9 +5190,10 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 /* commands */
 static const char *termcmd[] = { "/usr/local/bin/foot", NULL };
 static const char *menucmd[] = { "/usr/local/bin/tofi-drun", NULL };
-static const char *volumeup[]   = { "/usr/bin/sndioctl", "output.level=+0.05", NULL };
+static const char *volumeup[] = { "/usr/bin/sndioctl", "output.level=+0.05", NULL };
 static const char *volumedown[] = { "/usr/bin/sndioctl", "output.level=-0.05", NULL };
 static const char *mutevolume[] = { "/usr/bin/sndioctl", "output.mute=!", NULL };
+static const char *wlrwhichkey[] = { "/usr/local/bin/wlr-which-key",  NULL };
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: 2 -> at, etc. */
@@ -5200,6 +5201,7 @@ static const Key keys[] = {
 	{ 0,                         XKB_KEY_XF86AudioRaiseVolume, spawn, {.v = volumeup   } },
 	{ 0,                         XKB_KEY_XF86AudioLowerVolume, spawn, {.v = volumedown } },
 	{ 0,                         XKB_KEY_XF86AudioMute, spawn, {.v = mutevolume } },
+	{ MODKEY,                    XKB_KEY_z,          spawn,          {.v = wlrwhichkey} },
 	{ MODKEY,                    XKB_KEY_a,           spawn,            {.v = menucmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Return,      spawn,            {.v = termcmd} },
 	{ MODKEY|WLR_MODIFIER_CTRL,  XKB_KEY_Return,      spawn,            SHCMD("emacsclient -a \"\" -c") },

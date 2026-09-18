@@ -14,7 +14,7 @@ C-u C-c C-v t
 ** tangle from the command line
 
 #+BEGIN_SRC sh
-emacs --batch -l org --eval '(org-babel-tangle-file "~/git/freebsd-dotfiles/freebsd-dotfiles.org")'
+emacs --batch -l org --eval '(org-babel-tangle-file "~/git/openbsd/openbsd-dotfiles-macbook/openbsd-dotfiles-macbook.org")'
 #+END_SRC
 
 * openbsd dotfiles

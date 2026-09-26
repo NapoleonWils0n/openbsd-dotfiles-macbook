@@ -5457,6 +5457,7 @@ pkg_info -mz
 - tree-sitter--
 - wayland-protocols--
 - wev--
+- wf-recorder--
 - wget--
 - wl-clipboard--
 - wlroots--
